@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestion de Contacts</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Contacts</h1>
+      <button id="add-contact-btn">+ Ajouter un contact</button>
+    </header>
+    <div class="contact-form-overlay" id="contact-form-overlay">
+      <form id="contact-form">
+        <h2>Ajouter un Contact</h2>
+        <input type="text" id="name" placeholder="Nom complet" required>
+        <input type="text" id="phone" placeholder="Téléphone" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <div class="form-buttons">
+          <button type="button" id="cancel-btn">Annuler</button>
+          <button type="submit">Enregistrer</button>
+        </div>
+      </form>
+    </div>
+    <div class="contact-list">
+      <ul id="contacts"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
